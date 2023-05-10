@@ -8,26 +8,51 @@
   </head>
   <body>
     <script>
-        // Your JavaScript goes here!
-        console.log("Hello, World!")
-      </script>
-      <script>
-        let x = 10;
+      // Your JavaScript goes here!
+      console.log("Hello, World!");
+    </script>
+    <script>
+      let x = 10;
       let y = 20;
       let sum = x + y;
-      
+
       console.log("The value of x is: " + x);
       console.log("The value of y is: " + y);
       console.log("The sum of x and y is: " + sum);
-      </script>
-     <script>
-        //"Two variables hold the same data"
-        let mes = '10';
-        let tes;
-        //equalling variables
-        tes = mes;
-         alert(mes);
-         alert(tes);
-       </script>
+    </script>
+
+    <!-- //"Two variables hold the same data" -->
+
+    <script>
+      let mes = "10";
+      let tes;
+
+      //equalling variables
+
+      tes = mes;
+      alert(mes);
+      alert(tes);
+    </script>
+
+    <!-- Declaring twice triggers an error -->
+    <script>
+       let inbox = "this";
+       let inbox = "that";
+      alert("inbox= hello");
+      //  when we use same variable name it  shows syntax error with same data type (in this field "let")
+      //  But if we are using two lets at a same time it will definitely show error shows errror
+    </script>
+
+          <!-- when same variable have two values the last one will give output -->
+
+    <script>
+      let message;
+
+      message = "Hello!";
+
+      message = "World!"; // value changed
+
+      alert(message);
+    </script>
   </body>
 </html>
