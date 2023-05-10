@@ -36,14 +36,14 @@
 
     <!-- Declaring twice triggers an error -->
     <script>
-       let inbox = "this";
-       let inbox = "that";
+      let inbox = "this";
+      let inbox = "that";
       alert("inbox= hello");
       //  when we use same variable name it  shows syntax error with same data type (in this field "let")
       //  But if we are using two lets at a same time it will definitely show error shows errror
     </script>
 
-          <!-- when same variable have two values the last one will give output -->
+    <!-- when same variable have two values the last one will give output -->
 
     <script>
       let message;
@@ -54,12 +54,24 @@
 
       alert(message);
     </script>
-     <!-- variables which we can not use -->
+    <!-- variables which we can not use -->
     <script>
-     
       // 1st starting with digit
       //having hyphen
       //Reserved Names = class , return , let , function
-</script>
+    </script>
+    <!-- contant = const variable -->
+    <script>
+      // Variables declared using const are called “constants”. 
+      // they cannot be reassigned. An attempt to do so would cause an error:
+      const birthday='02.05.2003';
+      birthday='02.05.2004'
+     alert(birthday);
+     </script>
+     <script>
+      let name ='john';
+      let admin= name;
+      alert(admin);
+     </script>
   </body>
 </html>
