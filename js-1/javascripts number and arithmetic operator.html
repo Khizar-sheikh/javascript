@@ -39,5 +39,17 @@ let a = 999999999999999;
 let b = 9999999999999999;
 document.getElementById("demo3").innerHTML = a + "<br>" + b;
 </script>
+<h4>
+Floating Precision
+</h4>
+<p>
+  Floating point arithmetic is not always 100% accurate:
+</p>
+<p id="demo4"></p>
+
+<script>
+let xa = 0.2 + 0.1;
+document.getElementById("demo4").innerHTML = "0.2 + 0.1 = " + xa;
+</script>
   </body>
 </html>
