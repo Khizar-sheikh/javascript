@@ -16,15 +16,28 @@ let x = 3.14;
 let y = 3;
 document.getElementById("demo1").innerHTML = x + "<br>" + y;
 </script>
-<h4>
-    Extra large icons can be written with scientific notation
+<h4 class="demo2">
+  Extra large icons can be written with scientific notation
 </h4>
-<p id="demo"></p>
+<p id="demo2"></p>
 
 <script>
 let r= 123e5;
 let u = 123e-5;
-document.getElementById("demo").innerHTML = r + "<br>" + u;
+document.getElementById("demo2").innerHTML = r + "<br>" + u;
+</script>
+<h4>
+  Integer Precision
+</h4>
+<p>
+  Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
+</p>
+<p id="demo3"></p>
+
+<script>
+let a = 999999999999999;
+let b = 9999999999999999;
+document.getElementById("demo3").innerHTML = a + "<br>" + b;
 </script>
   </body>
 </html>
