@@ -85,5 +85,14 @@ let str2 = "10";
 let z = str1*str2;  
 document.getElementById("demostr").innerHTML= z;
     </script>
+    <p>You can use the global JavaScript function isNaN() to find out if a value is not a number:</p>
+    <p>"isNaN(x)" function if not a number print true else if a number print false</p>
+
+    <p id="demo"></p>
+    
+    <script>
+    let nan= 100 / "Apple";
+    document.getElementById("demo").innerHTML = isNaN(nan);
+    </script>
   </body>
 </html>
