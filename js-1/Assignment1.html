@@ -20,7 +20,7 @@
   console.log(sum);
 </script>
 <h2>give output of (4 + 6 + 9) / 77</h2>
-<p id="demo"></p>
+
 <script>
   console.log((4 + 6 + 9) / 77);
 </script>
@@ -34,13 +34,13 @@
  </script>
  <h2>let use variables</h2>
  <script>
-    let a=10;
-    console.log(a);
-    console.log(9*a);
-    let b=7*a;
-    console.log(typeof b);
-    console.log(b);
-
+    let a=10
+    console.log(a)
+    console.log(9*a)
+    let b=7*a
+    console.log(typeof b)
+    console.log(b)
+     console.log( `hello,${a}`)
  </script>
  <h2>Using constant</h2>
  <script>
@@ -49,3 +49,21 @@
   let percentage=actual/max;
   console.log(percentage.toFixed(4));
  </script>
+<button>hello world</button>
+<p>
+  i am saying hello
+</p>
+<script>
+  const btn= document.querySelector("button");
+  const txt = document.querySelector("p");
+ btn.addEventListener("click", updateBtn);
+ function updateBtn() {
+  if (btn.textContent === "hello world"){
+    btn.textContent = "goodbye world";
+    txt.textContent = "i am saying helllo";
+  }else{
+    btn.textContent="hello world";
+    txt.textContent="i am saying goodbye.";
+  }
+  }
+    </script>
