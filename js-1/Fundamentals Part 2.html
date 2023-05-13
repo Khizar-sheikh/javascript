@@ -1,21 +1,62 @@
-<h1>
-    Data types
-</h1>
+<h1>Data types</h1>
 <script>
-let message = "hello";
-message = "123456"
-console.log(message);
+  let message = "hello";
+  message = "123456";
+  console.log(message);
+</script>
+<h1>Strings:</h1>
+<script>
+  let str = "hello";
+  let str2 = "world";
+  let str3 = `"goodbye ${str2}"`;
+  console.log(str3);
+  let name = "john";
+  console.log(`hello ${name}`);
+  console.log("hello ${1+2}");
+  console.log(`hello ${1 + 2}`);
+</script>
+<h1>Booolean logics(true and false)</h1>
+<script>
+  let isgreater = 4 > 1;
+  console.log(isgreater);
+  let isgreater2 = 4 < 2;
+  console.log(isgreater2);
+  let isgreater3 = 3 + 3 < 8;
+  console.log(isgreater3);
+  let isgreater4 = 3 + 3 > 8;
+  console.log(isgreater4);
 </script>
 <h1>
-    Strings:
+    Values
 </h1>
+<h4>The Null Value:</h4>
 <script>
-    let str = "hello";
-    let str2= "world"
-    let  str3= `"goodbye ${str2}"`
-    console.log(str3);
-    let name = "john";
-    console.log(`hello ${name}`)
-    console.log("hello ${1+2}")
-    console.log(`hello ${1+2}`)
-    </script>  
+    let age=null;
+    console.log(age);
+</script>
+<h4>The Undefined Value:</h4>
+<script>
+    let age1=100;
+    console.log(age1);
+    let age2;
+    console.log(age2)
+    let age3=undefined;
+    console.log(age3);
+</script>
+<h4>The Infinity Value:</h4>
+<script>
+let a=1/0;
+console.log(a);
+let b=Infinity;
+console.log(b)
+</script>
+<h4>NaN Value</h4>
+<script>
+let c = NaN/0;
+console.log(c);
+let d= "hello"/2;
+let dA=d.toString()
+console.log(d);
+</script>
+
+
