@@ -26,52 +26,105 @@
   let isgreater4 = 3 + 3 > 8;
   console.log(isgreater4);
 </script>
-<h1>
-    Values
-</h1>
+<h1>Values</h1>
 <h4>The Null Value:</h4>
 <script>
-    let age=null;
-    console.log(age);
+  let age = null;
+  console.log(age);
 </script>
 <h4>The Undefined Value:</h4>
 <script>
-    let age1=100;
-    console.log(age1);
-    let age2;
-    console.log(age2)
-    let age3=undefined;
-    console.log(age3);
+  let age1 = 100;
+  console.log(age1);
+  let age2;
+  console.log(age2);
+  let age3 = undefined;
+  console.log(age3);
 </script>
 <h4>The Infinity Value:</h4>
 <script>
-let a=1/0;
-console.log(a);
-let b=Infinity;
-console.log(b)
+  let a = 1 / 0;
+  console.log(a);
+  let b = Infinity;
+  console.log(b);
 </script>
 <h4>NaN Value and typeof</h4>
 <script>
-let c = NaN/0;
-console.log(c);
-let d= "hello"/2;
-let dA=d.toString()
-let dB=0.002;
-console.log(d);
-console.log(typeof d)
-console.log(typeof dA)
-console.log(typeof false)
-console.log(typeof dB )
-console.log(typeof Math )
-console.log( typeof null)
-console.log (typeof alert);
-console.log (typeof "Click");
-console.log (typeof document.getElementById);
-
-
-
-
-
+  let c = NaN / 0;
+  console.log(c);
+  let d = "hello" / 2;
+  let dA = d.toString();
+  let dB = 0.002;
+  console.log(d);
+  console.log(typeof d);
+  console.log(typeof dA);
+  console.log(typeof false);
+  console.log(typeof dB);
+  console.log(typeof Math);
+  console.log(typeof null);
+  console.log(typeof alert);
+  console.log(typeof "Click");
+  console.log(typeof document.getElementById);
 </script>
+<script>
+  let star = "*";
+  let star1 = star.repeat(5);
+  let star2 = star.repeat(4);
+  let star3 = star.repeat(3);
+  let star4 = star.repeat(2);
+  let star5 = star.repeat(1);
 
+  console.log(star1);
+  console.log(star2);
+  console.log(star3);
+  console.log(star4);
+  console.log(star5);
+</script>
+<script>
+  // Define the number of stars to start with
+  let numStars = 6;
 
+  // Loop through each line
+  for (let i = 0; i < 6; i++) {
+    // Print the stars for the current line
+    let row = "";
+    for (let j = 0; j < numStars; j++) {
+      row += "*";
+    }
+    console.log(row);
+
+    // Decrease the number of stars for the next line
+    numStars--;
+  }
+  console.log(`hello ${1}`);
+</script>
+<!-- <button>Press me</button>
+<script>
+  let button = document.querySelector("button");
+
+  function greet() {
+    const name = prompt("What is your name?");
+    alert(`Hello ${name}, nice to see you!`);
+    //  alert(`Hello ${name}, nice to see you!`);
+  }
+
+  button.addEventListener("click", greet);
+</script>
+<script>
+  const greeting = 'Hello';
+  const nameA = 'Chris'
+  console.log(greeting + " ," + nameA); // "Hello, Chris"
+  console.log(`"${greeting}, ${nameA}"`); // "Hello, Chris"
+</script> -->
+<button>
+    Hello World
+</button>
+<script>
+    let button=document.querySelector("button")
+    
+    function hello(){
+        let messAge=prompt("Your Name:")
+        alert(`"hi, ${messAge} welcome to internet world"`)
+    }
+    button.addEventListener("click",hello)
+</script>
