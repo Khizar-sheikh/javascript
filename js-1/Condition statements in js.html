@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+   <h1>
+    Boolean Results:
+   </h1> 
+   <p class="demo"></p>
+   <!-- <script>
+//    alert ( 2 > 1 );
+//    alert( 2 == 1 );
+//    alert( 2 != 1 );
+//     </script> -->
+   <h2>JavaScript if</h2>
+
+   <p>Display "Good day!" if the hour is less than 18:00:</p>
+   
+   <p id="demo">Good Evening!</p>
+   
+   <script>
+   if (new Date().getHours() < 18) {
+     document.getElementById("demo").innerHTML = "Good day!";
+   }
+   </script>
+<script>
+    let x=6
+    let y= 7
+    if(x<y) {
+         console.log("hello")
+    } else{
+         console.log("bye")
+    }
+    
+    
+</script>
+<script>
+    const hour = new Date().getHours(); 
+let greeting;
+    if (hour < 18){
+        greet="Good Day!"
+    }else{
+        greet="Good Evening!"
+    }
+    console.log(greet);
+</script>
+<h2>Javascrip if esle statement</h2>
+<script>
+let time = new Date().getHours();
+    if(time < 10){
+        greeting="Goood1"
+    }else if(time >10){
+       greeting="Good2"
+    }else{
+       greeting="good3"
+    }
+    console.log(greeting);
+</script>
+<script>
+    let hourA = 24;
+
+if (hourA < 23 || hourA > 23) {
+  alert('The office is closed.');
+}
+</script>
+<script>
+    let cheese = "Cheddar";
+
+if (cheese) {
+  console.log("Yay! Cheese available for making cheese on toast.");
+} else {
+  console.log("No cheese on toast for you today.");
+}
+</script>
+<script>
+    let shoppingDone = false;
+let childsAllowance;
+
+// We don't need to explicitly specify 'shoppingDone === true'
+if (shoppingDone) {
+  childsAllowance = 10;
+  console.log(childsAllowance)
+} else {
+  childsAllowance = 5;
+  console.log(childsAllowance)
+}
+</script>
+<label for="weather">Select the weather type today: </label>
+<select id="weather">
+  <option value="">--Make a choice--</option>
+  <option value="sunny">Sunny</option>
+  <option value="rainy">Rainy</option>
+  <option value="snowing">Snowing</option>
+  <option value="overcast">Overcast</option>
+</select>
+
+<p></p>
+
+<script>
+    const select = document.querySelector("select");
+const para = document.querySelector("p");
+let temperature=97;
+    select.addEventListener("change", setWeather);
+    function setWeather() {
+  const choice = select.value;
+if (choice === "sunny") {
+  if (choice === "sunny" && temperature < 86){
+    para.textContent = `It is ${temperature} degrees outside — nice and sunny. Let's go out to the beach, or the park, and get an ice cream.`;
+  } else if(choice === "sunny" && temperature >= 86) {
+    para.textContent = `It is ${temperature} degrees outside — REALLY HOT! If you want to go outside, make sure to put some sunscreen on.`;
+  }
+}
+    }
+
+</script>
+
+<script>
+    let iceCreamVanOutside="true"
+
+    if (iceCreamVanOutside || houseStatus === "on fire") {
+  console.log("You should leave the house quickly.");
+} else {
+  console.log("Probably should just stay in then.");
+}
+</script>
+<script>
+    const xa = 5;
+const ya = 4;
+const z = 10;
+const loggedIn = false;
+const userName = "Steve";
+if ((xa === 5 || yb > 3 || z <= 10) && (loggedIn || userName === "Stev")) {
+ console.log("You can log in.");
+}else{
+    console.log("You can't log in.");
+}
+</script>
+<h2>
+    Switch Statements
+</h2>
+<li>
+    <ul>
+        Syntax of switch statements:
+    <!-- <script>
+    // Syntax of switch statements
+    switch(expression){
+        case choice1:
+        *Run this code*
+        break;
+
+        case choice2:
+        *Run this code*
+        break;
+
+        *Include as many cases as you want*
+        
+        default:
+            actually,run the code
+    }
+</script> -->
+</ul>
+</li>
+
+</body>
+</html>
